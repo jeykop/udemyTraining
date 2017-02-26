@@ -12,3 +12,6 @@ func main() {
 func greet(name string) {
 	fmt.Println(name)
 }
+
+// Greet was declared with a parameter
+// When calling greet(), pass in an argument

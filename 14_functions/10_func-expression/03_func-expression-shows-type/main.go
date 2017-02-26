@@ -8,6 +8,6 @@ func main() {
 		fmt.Println("Hello World!")
 	}
 	greeting()
-	fmt.Printf("%T\n", greeting)
+	fmt.Printf("%T", greeting)
 }
 
