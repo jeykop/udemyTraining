@@ -19,20 +19,21 @@ func main() {
 	defer res.Body.Close()
 	// Set the split function for the scanning operation.
 	scanner.Split(bufio.ScanWords)
-	// Create slice to hold counts
-	buckets := make([]int, 200)
-	// Loop over the words
+	// Creat slice to hold counts
+	buckets := make([]int, 12)
+	// Loop over words
 	for scanner.Scan() {
-		n := hashBucket(scanner.Text())
+		n := hashBucket(scanner.Text(), 12)
 		buckets[n]++
 	}
-	fmt.Println(buckets[65:123])
-	// fmt.Println("***************")
+		fmt.Println(buckets)
+	// fmt.Println("*************")
 	// for i := 28; i <= 126; i++ {
-	// fmt.Printf("%v - %c - %v \n", i, i, buckets[i])
-	// }
+	// fmt.Printf("%v - %c -%v \n", i, i, buckets[i])
 }
 
-func hashBucket(word string) int {
-	return int(word[0])
+func hashBucket(word string, buckets int) int {
+	letter := int(word[0])
+	bucket := letter % buckets
+	return bucket
 }
