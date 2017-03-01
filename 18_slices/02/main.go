@@ -6,7 +6,7 @@ func main() {
 
 	mySlice := []string{"a", "b", "c", "g", "m", "z",}
 	fmt.Println(mySlice)
-	fmt.Println(mySlice[2:4]) // slicign a slice
-	fmt.Println(mySlice[2]) // index access; accessing by index
-	fmt.Println("myString"[2]) // index acces; accessing by index
+	fmt.Println(mySlice[2:4])
+	fmt.Println(mySlice[2])
+	fmt.Println("MyString"[2])
 }
