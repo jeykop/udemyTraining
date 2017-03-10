@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	a := 43
+	a := "Jeykop"
 
 	fmt.Println(a)
 	fmt.Println(&a)
@@ -13,4 +13,6 @@ func main() {
 
 	fmt.Println(b)
 	fmt.Printf("%T \n", b)
+	fmt.Println(*b)
+	fmt.Printf("%T \n", *b)
 }

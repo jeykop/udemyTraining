@@ -17,5 +17,5 @@ func main() {
 	// fmt.Println(myAge + yourAge)
 
 	// this conversion works:
-	// fmt.Println(int(myAge) + yourAge)
+	 fmt.Println(int(myAge) + (yourAge))
 }
